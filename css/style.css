@@ -1,0 +1,368 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  max-width: 1160px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+/* ヘッダー */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header > .container{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 60px;
+}
+/* ロゴ */
+.area-logo-header .logo {
+  display: block;
+
+}
+.area-logo-header img {
+  height: 60px;
+  vertical-align: bottom;
+}
+/* ヘッダーナビ */
+.nav-header {
+  margin: 0 0 0 auto;
+}
+.list-nav-header {
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+.list-nav-header > li {
+  padding: 0 15px;
+}
+.list-nav-header a {
+  color: #fff;
+  font: 400 18px/1em 'futura PT','note sans japanese',sans-serif;
+}
+/* ボタン共通化 */
+[class*="btn-icon"] {
+  color: #fff;
+  font: 400 18px/1em 'futura PT','note sans japanese',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 30px 0 60px;
+  background: orange;
+  position: relative;
+}
+[class*="btn-icon"]:before {
+content: "";
+width: 30px;
+height: 30px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+position: absolute;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+}
+[class*="btn-icon"][class*="mail"]:before{
+  background: url(../cmn/icon/mailicon.svg);
+}
+[class*="btn-icon"][class*="youtube"]:before{
+  background: url(../cmn/icon/mailicon.svg);
+}
+/* トップビュー */
+.area-top-view { 
+  background:url(../cmn/img/headerphoto.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+.area-top-view > .container{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area-top-view img {
+height: 60px;
+vertical-align: bottom;
+}
+
+.area-top-view .ttl {
+  color: #fff;
+  font: 400 27px/1em 'futura PT','note sans japanese',sans-serif;
+  letter-spacing: .04em;
+  margin: 20px 0 0;
+  /* padding: 0 0 0 20px; */
+  /* position: relative; */
+}
+/* .area-top-view .ttl:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../cmn/icon/mailicon.svg) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+} */
+/* トップビューend */
+/* エリアホーム start*/
+[class*="area-home"] {
+  padding: 80px 0 120px;
+}
+
+/* ヘッド */
+.head-home {
+  margin:  0 0 63px;
+  display: flex;
+  justify-content: center;
+}
+.head-home .ttl {
+  font: 500 56px/1em 'futura PT','note sans japanese',sans-serif;
+  padding: 0 0 12px;
+  position: relative;
+}
+.head-home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 2分割レイアウト */
+.layout-2-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -40px;
+}
+.layout-2-div > div{
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* テキストホーム */
+.text-home .ttl{
+  font: 500 32px/1em 'futura PT','note sans japanese',sans-serif;
+  margin: 0 0 20px;
+}
+.text-home .discription{
+  font: 300 20px/1.8em 'futura PT','note sans japanese',sans-serif;
+}
+.text-home .btnarea {
+  margin: 30px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+/* バックグラウンドとは */
+.bg-black {
+  color: #fff;
+  background: black;
+}
+
+/* kippeiとは */
+.area-home-about img{
+  transform: scale(1.1);
+  transform-origin: center center;
+}
+
+section + section {
+  margin: 10px 0;
+}
+/* 特徴 */
+.list-feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.list-feature > li {
+  width: 33.3333%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-feature .img{
+margin: 0 0 40px;
+position: relative;
+z-index: 1;
+}
+.list-feature img {
+  width: 80px;
+  height: 80px;
+  vertical-align: bottom;
+}
+
+.list-feature .ttl{
+  font: 500 28px/1em 'futura PT','note sans japanese',sans-serif;
+  margin: 0 0 30px;
+}
+.list-feature .description{
+  font: 200 16px/2em 'note sans japanese',sans-serif;
+}
+
+/* Illustrator作品セクションstart */
+/* イラストレーター作品集の文字色 */
+.bg-silver {
+  color: #000;
+}
+/* イラストレーター作品集の背景 */
+.body-home-bg {
+  background: #F0EAE4;
+  
+}
+.list-feature-ill {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.list-feature-ill > li {
+  width: 33.3333%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-feature-ill .img{
+margin: 0 0 10px;
+position: relative;
+z-index: 1;
+}
+.list-feature-ill img {
+  width: 340px;
+  height: 445px;
+  vertical-align: bottom;
+}
+
+.list-feature-ill .ttl{
+  font: 500 28px/1em 'futura PT','note sans japanese',sans-serif;
+  margin: 0 0 40px ;
+}
+
+/* Photoshop作品セクションend */
+
+/* Photoshop作品セクションstart */
+/* Photoshop作品集の文字色 */
+.bg-silver {
+  color: #000;
+}
+/* Photoshop作品集の背景 */
+.body-home-bg-psd {
+  background: #F0EAE4;
+
+}
+.list-feature-psd {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.list-feature-psd > li {
+  width: 33.3333%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-feature-psd .img{
+margin: 40px 0 10px;
+position: relative;
+z-index: 1;
+}
+.list-feature-psd img {
+  width: 320px;
+  height: 106px;
+  vertical-align: bottom;
+}
+
+.list-feature-psd .ttl{
+  font: 500 28px/1em 'futura PT','note sans japanese',sans-serif;
+  margin: 0 0 40px ;
+}
+
+/* Photoshop作品セクションend */
+/* フッター */
+footer > .container {
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* snsリンク箇所 */
+.list-sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px 10px;
+}
+.list-sns > li {
+  padding: 0 10px;
+}
+.list-sns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.list-sns a:before{
+  content: "";
+  display: block;
+width: 40px;
+height: 40px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+
+.list-sns .facebook a::before{
+  background: url(../cmn/icon/facebookicon.svg);
+}
+.list-sns .instagram a::before{
+  background: url(../cmn/icon/instagramicon.svg);
+}
+.list-sns .twitter a::before{
+  background: url(../cmn/icon/twittericon.svg);
+}
+
+.container .copyrigh {
+  font: 300 14x/1em 'futura PT','note sans japanese',sans-serif;
+  margin: 50px 0 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
